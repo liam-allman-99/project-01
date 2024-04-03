@@ -1,42 +1,37 @@
-const $ = require('jquery');
-require('bootstrap');
-require('slick-carousel');
+import $ from 'jquery';
+import "bootstrap";
+import "slick-carousel";
 
-// Triggers all code on DOM load
-$(function(){
-  initSlick();
-
-  // Setting up global slick slider
-  function initSlick () {
-    $('.global-slider').slick({
-      dots: false,
-      arrows: true,
-      nextArrow: '<button class="slick-arrow slick-next">Next</button>',
-      prevArrow: '<button class="slick-arrow slick-prev">Prev</button>',
-      slidesToScroll: 1,
-      slidesToShow: 1,
-      infinite: false,
-      mobileFirst: true,
-      responsive: [
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 2,
-          }
-        },
-        {
-          breakpoint: 1201,
-          settings: {
-            slidesToShow: 3,
-          }
-        },
-        {
-          breakpoint: 1441,
-          settings: {
-            slidesToShow: 4,
-          }
-        },
-      ],
-    });
-  }
+$(function() {
+  initSliders();
 });
+
+/**
+ * @description initialise the slick sliders for the page
+ */
+let initSliders = () => {
+  $(".global-slider").slick({
+    dots: false,
+    arrows: true,
+    nextArrow: '<button class="slick-arrow slick-next"><i class="fa-solid fa-chevron-right"></i></button>',
+    prevArrow: '<button class="slick-arrow slick-prev"><i class="fa-solid fa-chevron-left"></i></button>',
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    infinite: false,
+    mobileFirst: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+    ],
+  });
+};
