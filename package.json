@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
+    "sass": "^1.72.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "name": "project-01",
+  "description": "packages used for project",
+  "version": "1.0.0",
+  "main": "global.js",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "browserify": "^17.0.0",
+    "grunt-php": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-open": "^3.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^3.0.0",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liam-allman-99/project-01.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liam-allman-99/project-01/issues"
+  },
+  "homepage": "https://github.com/liam-allman-99/project-01#readme"
+}
