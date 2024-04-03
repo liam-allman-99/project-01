@@ -1,6 +1,15 @@
+// Importing variables file
+@import "modules/variables";
+
 // Importing NPM Packages Styles
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 @import "node_modules/slick-carousel/slick/slick.scss";
+
+// Import font file
+@import "modules/fonts";
+
+// Importing mixins file
+@import "modules/mixins";
 
 // Global Style Setup
 
@@ -18,11 +27,4 @@ body {
   width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-h1.example-title {
-  color: green;
-  background-color: red;
-  padding: 2rem;
-  font-size: 4rem;
 }
